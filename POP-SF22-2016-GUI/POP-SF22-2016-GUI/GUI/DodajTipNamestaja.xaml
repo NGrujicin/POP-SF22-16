@@ -1,0 +1,17 @@
+﻿<Window x:Class="POP_SF22_2016_GUI.GUI.DodajTipNamestaja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POP_SF22_2016_GUI.GUI"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="DodajTipNamestaja" Height="250" Width="350">
+    <Grid>
+        <Label Name="lblNaziv" Content="Naziv:" Height="30" Width="50" RenderTransformOrigin="-0.347,-0.303" Margin="32,40,262,150" ></Label>
+        <TextBox Name="tbNaziv" Height="30" Width="200" Margin="97,40,47,150"></TextBox>
+        <Button Name="btnDodaj" Content="Dodaj" Height="30" Width="100" Margin="32,138,212,52" ></Button>
+        <Button Click="btnNazad_Click" Name="btnNazad" Content="Nazad" Height="30" Width="100" Margin="197,138,47,52" ></Button>
+    </Grid>
+</Window>
