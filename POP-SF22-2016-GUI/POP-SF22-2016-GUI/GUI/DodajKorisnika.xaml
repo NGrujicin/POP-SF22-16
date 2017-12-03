@@ -21,13 +21,13 @@
         <Label Name="lblDodajPassword" HorizontalContentAlignment="Right" Grid.Row="0" Content="Password:" Height="30" Width="61" Margin="60,163,322.2,103" RenderTransformOrigin="-0.07,0.575"></Label>
         <Label Name="lblDodajTipKorisnika" HorizontalContentAlignment="Right" Grid.Row="0" Content="Tip:" Height="30" Width="40" Margin="81,218,322.2,48"></Label>
 
-        <TextBox Name="tbIme" Grid.Row="0" Margin="167,18,67.2,238"/>
-        <TextBox Name="tbPrezime" Grid.Row="0" Margin="167,63,67.2,192"/>
-        <TextBox Name="tbUsername" Grid.Row="0" Margin="167,109,67.2,143"/>
-        <TextBox Name="tbPassword" Grid.Row="0" Margin="167,163,67.2,91"/>
-        <ComboBox Name="cbTip" Grid.Row="0" Margin="167,210,67.2,48"/>
+        <TextBox Name="tbIme" Text="{Binding Path=Ime}" Grid.Row="0" Margin="167,18,67.2,238"/>
+        <TextBox Name="tbPrezime" Text="{Binding Path=Prezime}" Grid.Row="0" Margin="167,63,67.2,192"/>
+        <TextBox Name="tbUsername"  Text="{Binding Path=Username}" Grid.Row="0" Margin="167,109,67.2,143"/>
+        <TextBox Name="tbPassword" Text="{Binding Path=Password}" Grid.Row="0" Margin="167,163,67.2,91"/>
+        <ComboBox Name="cbTip" SelectedItem="{Binding Path=Tip_Korisnika}" Grid.Row="0" Margin="167,210,67.2,48"/>
 
-        <Button Name="btnDodaj" Grid.Row="1" Content="Dodaj" Margin="40,10,292.2,26.4" />
+        <Button Click="btnSacuvaj_Click" Name="btnSacuvaj" Grid.Row="1" Content="Sacuvaj" Margin="40,10,292.2,26.4" />
         <Button Click="btnNazad_Click"  Name="btnNazad" Grid.Row="1" Content="Nazad" Margin="267,10,67.2,26.4"  />
     </Grid>
 </Window>

@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:POP_SF22_2016_GUI.GUI"
         mc:Ignorable="d"
-        Title="DodajAkciju" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="DodajAkciju" Height="400" Width="450">
+    <StackPanel>
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label HorizontalContentAlignment="Right" Margin="32 50 10 5" Grid.Row="0" Name="lblDatumPocetka" Content="Datum Pocetka: " Width="110" Height="40" Grid.Column="0"></Label>
+            <Label HorizontalContentAlignment="Right" Margin="32 10 10 5" Grid.Row="1" Name="lblDatumZavrsteka" Content="Datum Zavrsetka: " Width="110" Height="40" Grid.Column="0"></Label>
+            <Label HorizontalContentAlignment="Right" Margin="32 10 10 5" Grid.Row="2" Name="lblPopust" Content="Popust: " Width="110" Height="40" Grid.Column="0"></Label>
+            <DatePicker Name="dpPocetak" SelectedDate="{Binding Path=Datum_Pocetka}" Margin="15,50,10.2,19" Grid.Column="1" Grid.Row="0"/>
+            <DatePicker Name="dpKraj" SelectedDate="{Binding Path=Datum_Zavrsetka}" Margin="15,10,10.2,18" Grid.Column="1" Grid.Row="1"/>
+            <TextBox Name="tbPopust" VerticalContentAlignment="Center" Text="{Binding Path=Popust}" Margin="15,12.6,10.2,12.6" Height="30" Grid.Column="1" Grid.Row="2"/>
+
+        </Grid>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Click="btnSacuvaj_Click" Margin="0 70 0 0" Name="btnSacuvaj" Grid.Column="0" Height="40" Width="80" Content="Sacuvaj"></Button>
+            <Button Click="btnIzlaz_Click" Margin="0 70 0 0" Name="btnIzlaz" Grid.Column="1" Height="40" Width="80" Content="Izlaz"></Button>
+
+        </Grid>
+    </StackPanel>
 </Window>

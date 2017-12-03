@@ -112,4 +112,36 @@
     <NaStanju>false</NaStanju>
     <Tip_Namestaja>4</Tip_Namestaja>
   </Namestaj>
+  <Namestaj>
+    <Id>9</Id>
+    <Naziv>Trosed</Naziv>
+    <Cena>30000</Cena>
+    <Kolicina>10</Kolicina>
+    <AkcijskaCenaId>0</AkcijskaCenaId>
+    <NaStanju>false</NaStanju>
+    <Tip_Namestaja>0</Tip_Namestaja>
+  </Namestaj>
+  <Namestaj>
+    <Id>10</Id>
+    <Naziv>Trosed</Naziv>
+    <Cena>10000</Cena>
+    <Kolicina>1</Kolicina>
+    <AkcijskaCenaId>0</AkcijskaCenaId>
+    <NaStanju>false</NaStanju>
+    <Tip_Namestaja>0</Tip_Namestaja>
+  </Namestaj>
+  <Namestaj>
+    <Id>11</Id>
+    <Naziv>Trosed</Naziv>
+    <Cena>1500</Cena>
+    <Kolicina>2</Kolicina>
+    <AkcijskaCenaId>0</AkcijskaCenaId>
+    <TipNamestaja>
+      <Id>3</Id>
+      <Naziv>fotelja</Naziv>
+      <Obrisan>false</Obrisan>
+    </TipNamestaja>
+    <NaStanju>false</NaStanju>
+    <Tip_Namestaja>3</Tip_Namestaja>
+  </Namestaj>
 </ArrayOfNamestaj>

@@ -10,8 +10,8 @@
         Title="DodajTipNamestaja" Height="250" Width="350">
     <Grid>
         <Label Name="lblNaziv" Content="Naziv:" Height="30" Width="50" RenderTransformOrigin="-0.347,-0.303" Margin="32,40,262,150" ></Label>
-        <TextBox Name="tbNaziv" Height="30" Width="200" Margin="97,40,47,150"></TextBox>
-        <Button Name="btnDodaj" Content="Dodaj" Height="30" Width="100" Margin="32,138,212,52" ></Button>
-        <Button Click="btnNazad_Click" Name="btnNazad" Content="Nazad" Height="30" Width="100" Margin="197,138,47,52" ></Button>
+        <TextBox Name="tbNaziv" Margin="97,40,40,144" Text="{Binding Path=Naziv}" />
+        <Button Click="btnSacuvaj_Click" Name="btnSacuvaj" Content="Sacuvaj" Margin="32,138,207,45" />
+        <Button Click="btnNazad_Click" Name="btnNazad" Content="Nazad" Margin="197,138,40,45" />
     </Grid>
 </Window>

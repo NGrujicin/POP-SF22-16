@@ -11,7 +11,7 @@ namespace POP_SF22_2016_GUI.model
     {
         private int id;
         private DateTime datum_pocetka;
-        private decimal popust;
+        private int popust;
         private DateTime datum_zavrsetka;
 
         public int Id
@@ -39,7 +39,7 @@ namespace POP_SF22_2016_GUI.model
         }
 
 
-        public decimal Popust
+        public int Popust
         {
             get { return popust; }
             set

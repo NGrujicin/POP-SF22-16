@@ -10,9 +10,26 @@
   </Korisnik>
   <Korisnik>
     <Username>NL</Username>
-    <Ime>Nesto</Ime>
-    <Prezime>Levo</Prezime>
+    <Ime>Pera</Ime>
+    <Prezime>Peric</Prezime>
+    <Password>asd</Password>
+    <Tip_Korisnika>admin</Tip_Korisnika>
+    <Obrisan>false</Obrisan>
+  </Korisnik>
+  <Korisnik>
+    <Username>MarkoM</Username>
+    <Ime>Marko</Ime>
+    <Prezime>Markovic</Prezime>
     <Password>dsa</Password>
     <Tip_Korisnika>korisnik</Tip_Korisnika>
+    <Obrisan>true</Obrisan>
+  </Korisnik>
+  <Korisnik>
+    <Username>DejaD</Username>
+    <Ime>Deja</Ime>
+    <Prezime>Dimitrijevic</Prezime>
+    <Password>asd</Password>
+    <Tip_Korisnika>korisnik</Tip_Korisnika>
+    <Obrisan>false</Obrisan>
   </Korisnik>
 </ArrayOfKorisnik>

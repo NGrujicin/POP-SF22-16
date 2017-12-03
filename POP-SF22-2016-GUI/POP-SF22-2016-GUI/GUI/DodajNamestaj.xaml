@@ -20,12 +20,12 @@
         <Label Name="lblDodajKolicinaNamestaja" HorizontalContentAlignment="Right" Grid.Row="0" Content="Kolicina:" Height="30" Width="70" RenderTransformOrigin="-2.42,-3.532" Margin="51,150,322.2,116"></Label>
         <Label Name="lblDodajTipNamestaja" HorizontalContentAlignment="Right" Grid.Row="0" Content="Tip:" Height="30" Width="40" Margin="81,218,322.2,48"></Label>
 
-        <TextBox Name="tbIme" Grid.Row="0" Margin="167,10,67.2,248"/>
-        <TextBox Name="tbPrezime" Grid.Row="0" Margin="167,86,67.2,173"/>
-        <TextBox Name="tbUsername" Grid.Row="0" Margin="167,142,67.2,116"/>
-        <ComboBox Name="cbTip" Grid.Row="0" Margin="167,218,67.2,48"/>
+        <TextBox Name="tbNaziv" Text="{Binding Path=Naziv}" Grid.Row="0" Margin="167,10,67.2,248"/>
+        <TextBox Name="tbCena" Text="{Binding Path=Cena}" Grid.Row="0" Margin="167,86,67.2,173"/>
+        <TextBox Name="tbKolicina" Text="{Binding Path=Kolicina}" Grid.Row="0" Margin="167,142,67.2,116"/>
+        <ComboBox Name="cbTip" SelectedItem="{Binding Path=TipNamestaja}" Grid.Row="0" Margin="167,218,67.2,48"/>
 
-        <Button Name="btnDodaj" Grid.Row="1" Content="Dodaj" Margin="40,10,292.2,26.4" />
+        <Button Click="btnSacuvaj_Click" Name="btnSacuvaj" Grid.Row="1" Content="Sacuvaj" Margin="40,10,292.2,26.4" />
         <Button Click="btnNazad_Click" Name="btnNazad" Grid.Row="1" Content="Nazad" Margin="267,10,67.2,26.4"  />
     </Grid>
 </Window>
